@@ -1,0 +1,39 @@
+First install all dependencies for that run 'npm install' on the terminal
+
+To  run the program on port 5000 run 'npm start'
+
+ api request
+ 
+ To get the rate with respect to the INR
+ 
+http://localhost:5000/api/rate/?currencyCode=AED
+http://localhost:5000/api/rate/?currencyCode=ARS
+
+Sample output
+{
+    "result": 0.046118,
+    "currencyCode": "AED"
+}
+
+To get the data for bitcoin according with currencycode
+ 
+http://localhost:5000/api/bitdata/?currencyCode=AED
+http://localhost:5000/api/bitdata/?currencyCode=ARS
+
+sample output{
+
+{
+    "bitc": {
+        "symbol": "btcinr",
+        "baseAsset": "btc",
+        "quoteAsset": "AED",
+        "openPrice": 78400.646118,
+        "lowPrice": 76607.808868,
+        "highPrice": 79230.677882,
+        "lastPrice": 78455.89548199999,
+        "volume": "4.96646",
+        "bidPrice": 77478.286118,
+        "askPrice": 78455.9416,
+        "at": 1663307525000
+    }
+}
